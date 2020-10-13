@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/theme1.css">
+
+    <link rel="stylesheet" href="styles/theme2.css">
+
+
+    <title>GifOS</title>
+
+
+</head>
+
+<body>
+    <header class="">
+        <div class="top-bar">
+            <h3 class="top-bar-text">
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+            </h3>
+        </div>
+        <div class="logo" onclick="window.location.reload(true)">
+            <img alt="logo" src="logo">
+        </div>
+        <div class="sup">
+            <button class="crear" onclick="navegar()">
+                Crear Guifos
+            </button>
+            <button class="elegir">
+                Elegir tema
+            </button>
+            <button class="arrow-down" onclick="temas()">
+                <img src="arrow" alt="" class="">
+            </button>
+            <button class="mis" onclick="desaparecer('super')">
+
+                Mis Guifos
+
+
+            </button>
+            <div class="rayita">
+
+            </div>
+
+        </div>
+        <div class="busqueda" id="despliegue">
+            <div onclick="addCss(1)" id="sailor-day">
+                <h3>Sailor Day</h3>
+            </div>
+            <div onclick="addCss(2)" id="sailor-night">
+                <h3>Sailor Night</h3>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="busqueda">
+        <div>
+            <h3>Buscar</h3>
+        </div>
+        <label for="site-search"></label>
+        <input type="text" id="site-search" name="site-search"
+            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" aria-label="Search through site content">
+
+        <button onclick="cuadrosBusqueda(0)"><img src="assets/CombinedShape.svg" alt=""> Buscar</button>
+
+    </div>
+    <div class="busqueda" id="resultado">
+        <div onclick="cuadrosBusqueda(1)">
+
+        </div>
+        <div onclick="cuadrosBusqueda(2)">
+
+        </div>
+        <div onclick="cuadrosBusqueda(3)">
+
+        </div>
+    </div>
+
+    <div class="sugerimos">
+        <h3>
+            Hoy te sugerimos:
+        </h3>
+    </div>
+
+    <section class="cuadros" id="hoy">
+
+    </section>
+    <div class="sugerimos">
+        <h3>
+            Tendencias:
+        </h3>
+    </div>
+    <section class="tendencias2" id="tendencias3">
+        <div class="gif-tendencias">
+            <img src="tendencies" alt="">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+        <div class="gif-tendencias">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+        <div class="gif-tendencias">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+        <div class="gif-tendencias">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+        <div class="gif-tendencias">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+        <div class="gif-tendencias">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+        <div class="gif-tendencias">
+            <div>
+                <h3>#hashtag</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

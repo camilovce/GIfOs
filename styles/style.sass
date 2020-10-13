@@ -1,0 +1,638 @@
+$font-sm: 12px
+$font-md: 14px
+$font-lg: 16px
+$lineh-sm: 16px
+$lineh-md: 18px
+$lineh-20: 20px
+$lineh-lg: 22px
+$dark-purple: #110038
+$white: #ffffff
+$font-gray: #B4B4B4
+$sm-breakpoint: 340px
+$md-breakpoint: 600px
+$lg-breakpoint: 960px
+$xl-breakpoint: 1264px
+$rosa-oscuro: #CE36DB
+$rosa-claro:#F7C9F3
+$violeta-oscuro: #110038
+$violeta-claro:#FFF4FD
+$box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000
+// General
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    letter-spacing: 0
+
+body
+    padding: 0 9.75vw 0 6.96vw
+
+// Barra superior
+.top-bar
+    height: 23px
+    position: absolute
+    overflow: visible
+    left: 1px
+    width: calc(100vw - 2px)
+
+.top-bar-text
+    font-size: $font-sm
+    line-height: $lineh-sm
+    margin: 4px 0 0 7px
+    font-family: 'regular'
+
+.sup
+    display: flex
+    justify-content: flex-end
+    margin-top: 9px
+
+.logo
+    position: relative
+    // left: calc(9.75vw/2 - 6.34vw)
+    top: 59px
+    width: 7.13vw
+    height: 64px
+    align-self: flex-start
+
+.logo img
+    align-self: flex-start
+
+.sup button:nth-child(n)
+    height: 36px
+    text-align: center
+    vertical-align: middle
+    margin-left: 16px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: "regular"
+    font-size: 16px
+    letter-spacing: 0
+    line-height: 18px
+    align-content: center
+
+.sup button.arrow-down
+    width: 36px
+    margin-left: 1px
+    font-size: $font-lg
+
+.crear
+    width: 146px
+
+.elegir
+    width: 133px
+
+.sup button.mis 
+    background: transparent
+    border: 0
+    box-shadow: none 
+    position: relative
+
+.sup h2
+    font-family: 'regular'
+    font-size: $font-lg
+    letter-spacing: 0
+    line-height: $lineh-md
+    align-content: center
+
+// ********CUADRO DE BUSQUEDA**********
+
+.busqueda
+    width: 100%
+    margin-top: 35px
+    padding: 0 1px
+    padding-top: 1px
+    height: 99px
+
+.busqueda div
+    width: initial
+    margin: 3px
+    padding-top: 0.5px
+
+.busqueda h3, .gif-tendencias div h3
+    font-size: 14px
+    font-family: 'bold'
+    color: #FFFFFF
+    margin: 3px
+    
+.busqueda input
+    // width: 73.43vw
+    width: 88.08%
+    height: 48px
+    margin-left: 15px
+    margin-top: 12px
+    padding-left: 16px
+
+    
+
+.busqueda button
+    margin-right: 18px
+    width: 7.03vw
+    height: 36px
+    margin-top: 18px
+    position: relative
+    // top: 1px
+    padding-left: 20px
+.busqueda button.ver-mas
+    padding-left: 0
+.busqueda button, input[type="text"]#site-search, #despliegue div h3
+    font-family: 'regular'
+    color: $font-gray
+    font-size: $font-lg
+    
+.busqueda button img
+    width: 16px
+    position: absolute
+    left: 10px
+
+button.mis>h2:visited
+    color: black
+  
+
+input[type="text"]#site-search
+    -webkit-appearance: none!important
+    border: 1px solid gray
+    border-right: 0px
+    outline: none
+    font-family: 'regular'
+
+div#resultado div:nth-child(n)
+    width: 89%
+    height: 36px
+    margin-top: 16px
+    background: #F0F0F0
+    border: 1px solid #808080
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF
+#resultado
+    height: min-content  
+    padding: 17px 0 16px 15px
+    margin-top: 0
+    display: none
+
+#despliegue
+    position: relative
+    left: calc(100% - 92.5px - 175px)
+    width: 169px
+    margin-top: 0
+    padding: 10px
+    display: none
+#despliegue div:nth-child(n)
+    width: 100%
+    margin: 0px
+    margin-bottom: 10px
+    height: 36px
+    // background: #FFF4FD
+    border: 1px solid #CCA6C9
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF
+#despliegue div h3
+    color: $dark-purple
+
+.sugerimos
+    width: 100%
+    background: #FFFAFE
+    margin-top: 64px
+    margin-bottom: 16px
+
+.sugerimos h3
+    font-size: $font-md
+    font-family: 'regular'
+    margin: 7px
+
+section, .sugerencias div
+    display: flex 
+
+.sugerencias div
+    justify-content: space-between
+    padding: 3px
+    padding-right: 4px
+
+.sugerencias
+    width: 20vw
+
+.sugerencias h4
+    font-family: 'bold'
+    color: $white
+    font-size: $font-md
+
+.sugerencias img
+    width: 16px
+    height: 14px
+    // content: url("/../assets/button3.svg")
+
+.sugerencias:nth-child(n + 2)
+    margin-left: 16px
+
+button.ver-mas
+    position: absolute
+    left: 14px
+    bottom: 24px
+    width: 81px
+    height: 34px
+
+.ver-mas h4
+
+
+img.back
+    content: url("/assets/arrow.svg")
+    position: relative
+    top: 69px
+    right: 31px
+   
+
+div.tendencias:hover>div.sugerencias div
+    border: 1px solid $dark-purple
+img.giphy
+    // position: relative
+    width: 280px
+    height: 280px
+    margin-left: 3px
+    width: calc(100% - 6px)
+
+div.busqueda.sugerencias.tendencias:hover, div.busqueda.sugerencias.tendencias:hover> button
+    outline-offset: -5px
+    outline: 1px dotted #110038
+    text-overflow: clip
+
+.tendencias
+    height: min-content
+    position: relative
+.tendencias2
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.gif-tendencias
+    width: 288px
+    height: 298px
+
+    margin-bottom: 16px
+    position: relative
+    background: #B4B4B4
+.gif-tendencias div
+    position: absolute
+    bottom: 2.5px
+    left: 3.5px
+    width: calc(100% - 7px)
+    height: 24px
+    display: none
+
+.gif-tendencias div h3
+    font-size: $font-md
+    font-family: 'bold'  
+    margin-top: 6px
+
+.gif-tendencias img
+    height: 298px
+    width: 100%
+.gif-tendencias img:hover
+    height: 298px
+    margin-left: 3px
+    margin-top: 1.5px
+    width: calc(100% - 6px)
+    border: 1px solid #110038
+.gif-tendencias img:nth-child(5)
+    margin: 0
+.gif-tendencias:hover,.gif-tendencias:nth-child(5):hover
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF
+    background: #B4B4B4
+    width: 294px
+    height: 304px
+.gif-tendencias:nth-child(5), .gif-tendencias img:nth-child(5)
+    width: calc(288px*2 + (100% - 288px*4)/3)
+    border: 0px
+
+.gif-tendencias:nth-child(5):hover
+    width: calc(288px*2 + (100% - 288px*4)/3 + 4px)
+.gif-tendencias:nth-child(5):hover>img
+    margin-left: 2px
+    width: calc(100% - 4px)
+    height: calc(100% - 4px)
+.gif-tendencias:hover>div
+    width: calc(100%-4px)
+
+    // ******************MIS GUIFOS********************
+.crear-cuadroGrande
+    width: 47.5vw
+    margin-top: 170px
+    margin-left: 0px
+    position: relative
+    left: 25%
+    height: 386px
+
+.crear-cuadroGrande h2, .window
+    font-size: $font-lg
+    line-height: $lineh-lg
+    color: $dark-purple
+    position: absolute
+    left: 73px
+    top: 57px 
+    font-family: 'regular'
+img.window
+    left: 25px
+    width: 32px
+    height: 32px
+.crear-cuadroGrande p
+    color: $dark-purple
+    font-size: $font-md
+    line-height: $lineh-20
+    position: relative
+    left: 73px
+    top: 69px
+    width: 35.97vw 
+.crear-cuadroGrande button
+    position: absolute
+    margin-top: 0px
+    top: 312px
+    right: 196px    
+    
+.crear-cuadroGrande button:nth-child(3)
+    right: 36px
+.crear-cuadroGrande>button:nth-child(n)
+    background: #CCCCCC
+.crear-cuadroGrande button
+    display: flex
+    align-items: center
+.crear-cuadroGrande>button:nth-child(2n)
+    background: black
+    position: absolute
+    right: 36px
+#subir
+    display: none
+    width: 59.72vw
+    height: 548px
+    margin-left: 0
+    top: 243px
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    // left: 176px
+img.img-chequeo
+    width: 832px
+    height: 434px
+div.timer
+    justify-content: center
+    align-items: center
+    font-family: 'regular'
+    font-size: $font-lg
+    line-height: $lineh-md
+
+
+.crear-cuadroGrande div button:nth-child(n), .timer
+    // position: absolute 
+    width: 38px
+    height: 36px
+    top: 496px
+    margin: 0
+.crear-cuadroGrande div button:nth-child(1)    
+    right: 161px
+.crear-cuadroGrande div button:nth-child(2)
+    right: 16px
+    width: 146px
+.busqueda div:nth-child(3)
+    background: transparent
+.crear-cuadroGrande button h2
+    transform: translate(30%)
+    position: static
+video, #preview
+    width: 832px
+    height: 434px
+    padding: 2px 0
+    position: absolute
+    left: 8px
+/** .busqueda #subir div:nth-child(3)
+ background-color: transparent **/
+.busqueda div:nth-child(4)
+    display: none
+
+.capturando button:nth-child(1)
+    background-image: url(/../assets/recording.svg)
+#subir div.timer
+    background: $white
+    left: 11px
+    display: flex
+    margin: 0
+    position: absolute
+    width: 124px
+    border: 1px solid #979797
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
+div button.capturando
+    background: #FF6161
+    border: 1px solid #110038
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF
+    color: #ffffff
+
+#camarita-stop
+    background: #FF6161
+    background-image: url(/../assets/recording.svg)
+    background-repeat: no-repeat
+    background-position: center
+    
+#stop
+    background: #FF6161
+    border: 1px solid #110038
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF
+    color: #ffffff
+#cargando, #flecha, #contenedor
+    margin: 0 !important
+    padding: 0 !important
+#cargando, #flecha 
+    display: flex
+    width: 240px
+    height: 26px
+    background: #b4b4b4
+    border: 1px solid #979797
+    box-shadow: inset 2px 2px 0 0 #e6e6e6, inset  -2px -2px 0 0  #000000
+    align-items: first baseline
+    vertical-align: middle
+
+#cargando div:nth-child(n),#flecha, div.progress-bar-dos 
+    background: #999999
+    width: 12px
+    height: 20px
+    margin: 0px
+    margin-right: 1px
+    margin-left: 1px
+    margin-top: 1px
+#cargando div:nth-child(1) 
+    margin-left: 2px
+#cargando div:last-child
+    margin-right: 2px
+#flecha
+    width: 26px
+    height: 26px
+    margin-right: 4px !important
+    background-image: url('/../assets/forward.svg')
+    background-repeat: no-repeat
+    background-size: 6px 10px
+    background-position: center
+
+#contenedor
+    display: flex
+    background: #B4B4B4
+    width: fit-content
+    position: absolute
+    top: 501px
+    left: 159px
+#cargando
+    margin-left: 3px
+#subir2, #repetir, #cancelar
+    width: 144px
+    height: 36px
+    font-size: $font-lg
+    line-height: $lineh-md
+    padding: 0
+    justify-content: center
+#cancelar
+    top: 496px
+    right: 14px
+#repetir
+    right: 174px   
+#preview
+    position: absolute
+    left: 11px 
+    top: 38px
+    background: #FFFFFF
+    border: 1px solid #979797
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
+div.globo, .exito
+    background: transparent !important
+    display: grid 
+    grid-template: 1fr 30px 63px 1fr/ 1fr
+    grid-template-areas: "img""h2""bar""h3"
+    padding: 0
+div.globo
+    width: 838px
+    height: 440px
+.globo img, .globo h2, .globo h3, div.progress-bar-dos
+    margin: auto
+    margin-bottom: 0px
+    // background: transparent
+.globo img
+    width: 48px
+    height: 48px
+    grid-area: img
+    margin-top: 136px
+.globo h2
+    line-height: $lineh-lg
+    font-size: $font-lg
+    font-family: 'bold'
+    grid-area: h2
+    position: static
+    margin-top: 8px
+.globo h3
+    line-height: 14px
+    font-size: $font-sm
+    font-family: 'regular'
+    grid-area: h3
+    margin-top: 8px
+div.progress-bar-dos
+    width: 324px
+    height: 24px
+    grid-area: bar
+    margin-top: 39px
+.progress-bar-dos>div
+    width: 12px
+    height: 20px
+    margin: 0
+    padding: 0
+    margin-left: 2px
+    margin-top: 2px
+.progress-bar-dos>div:last-child
+    margin-right: 2px
+.exito
+    grid-template: 1fr 44px 52px 1fr/1fr 1fr
+.exito img
+    width: 367px
+    height: 193px
+    background: #FFFFFF
+    border: 1px solid #979797
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
+    opacity: 0.3
+    top: 56px
+    left: 27px
+.exito img, .exito h2, .exito button, #listo
+    position: absolute
+.exito button:nth-child(n)
+    width: 256px
+    height: 36px
+    
+div.progress-bar-dos
+    box-shadow: $box-shadow
+    padding: 0
+.exito h2, .exito button
+    left: 419px
+    top: 76px
+#copiar, #descargar, #listo
+    width: 256px
+    height: 36px
+#copiar
+    top: 114px
+#descargar
+    top: 164px
+#listo
+    width: 144px
+    top: 311px
+    left: 531px
+    padding: 0
+    justify-content: center
+#copiar,#descargar
+    background: $violeta-claro
+#resultado>div
+    display: flex
+    align-items: center
+    padding: 16px
+    // border: 1px solid #110038
+#resultado>div:hover,.busqueda button:active,#repetir:active
+    outline-offset: -3px
+    outline: 1px dotted #110038
+.ejemplos
+    display: flex
+    
+.ejemplos>div:nth-child(n)
+    padding: 8px 7px
+    height: 34px
+    width: fit-content
+    margin-top: 12px
+    margin-bottom: -22px
+    margin-right: 8px
+    color: #ffffff
+    line-height: $lineh-md
+    font-family: 'regular'
+    font-size: $font-md
+#copiar, #descargar, #listo,#cancelar
+    font-size: $font-md
+    line-height: $lineh-md
+#comenzar2,#comenzar
+    margin-right: 0
+    height: 40px
+    width: 148px
+    display: flex
+    justify-content: center
+    padding: 0
+    font-family: "bold"
+    font-size: 14px
+div.rayita 
+    left: -74px
+    width: 8px
+    border: 0px
+    border-top: 1px solid #110038
+    border-width: 2px
+    top: 27px
+    position: relative
+@font-face
+    font-family: 'bold'
+    src: url('/../assets/fonts/chakrapetch-bold-webfont.woff2') format('woff2'), url('chakrapetch-bold-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+
+@font-face
+    font-family: 'regular'
+    src: url('/../assets/fonts/chakrapetch-regular-webfont.woff2') format('woff2'), url('chakrapetch-regular-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+ 
+
+@media (min-width: 768px) and (max-width:1439px)
+    .busqueda input
+        width: 87%
+

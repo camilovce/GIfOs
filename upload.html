@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/theme1.css">
+    <link rel="stylesheet" href="styles/theme2.css">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</head>
+
+<body>
+    <header class="">
+        <div class="top-bar">
+            <h3 class="top-bar-text">
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+            </h3>
+        </div>
+        <a href="/index.html">
+            <img src="goback" alt="go back" class="back">
+        </a>
+        <div class="logo" style="position: absolute;">
+            <img src="logo" alt="logo">
+        </div>
+    </header>
+    <div class="busqueda sugerencias crear-cuadroGrande">
+        <div>
+            <h4>
+                Crear Guifos
+            </h4>
+            <!-- <img src="/assets/button3.svg" alt="cerrar"> -->
+        </div>
+        <h2>
+            Aquí podrás crear tus propios guifos
+        </h2>
+        <img src="assets/windowimg.png" alt="guifo sugerencia" class="window">
+        <p>
+            Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los
+            pasos
+            para crear tu guifo son: <br><br>
+            <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+            <b>2)</b> Capturar tu momento guifo
+            <br>
+
+            <b>3)</b> Revisar el momento <br>
+            <b>4)</b> Listo para subir y compartir! <br>
+            ¿Quieres comenzar a crear tu <b>guifo</b> ahora? <br>
+        </p>
+        <button onclick="location.href='/index.html'" id="comenzar2">
+            <img src="cancel" alt="">
+
+            Cancelar
+        </button>
+
+        <button onclick="subirHtml(); streamVideo();" id="comenzar">
+            Comenzar
+        </button>
+    </div>
+    <div class="busqueda sugerencias crear-cuadroGrande" id="subir">
+    </div>
+    <script src="scripts/subir.js"></script>
+    <script src="https://www.webrtc-experiment.com/common.js"></script>
+    <script src="scripts/RecordRTC.js"></script>
+</body>
+
+</html>

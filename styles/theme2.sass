@@ -1,0 +1,121 @@
+$base-color: #EE3EFE
+$body-color: #110038
+$shadow-border: rgba(17,0,56,1)
+$background-duo: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%)
+$border: 1px solid #110038
+$white: #ffffff
+$dark-purple: #FF110038
+$rosa-oscuro: #CE36DB
+$rosa-claro:#F7C9F3
+$violeta-oscuro: #110038
+$violeta-claro:#FFF4FD
+body
+    background-color: $body-color
+
+.top-bar
+    background-image: $background-duo
+    box-shadow: 0 1px 0 0 #110038
+
+div.sup>button
+    background: $base-color
+    border: $border
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+
+.logo
+    content: url("/../assets/gifOF_logo_dark.png")
+
+.arrow-down img
+    content: url("/../assets/forward.svg")
+    transform: rotate(-270deg)
+
+.sup button:nth-child(n), .arrow-down img
+    color: $white
+.top-bar-text, .sup div>h2
+    color: $white
+
+.busqueda
+    background: #B4B4B4
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF
+
+.busqueda div
+    background: $background-duo
+.sugerimos
+    border: 1px solid #2E32FB
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038
+#hoy button.ver-mas
+    background: #4180F6
+    border: 1px solid #4C2F99
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF
+div#resultado div:nth-child(n)
+    background: #CCCCCC
+    border: 1px solid #808080
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF
+
+#despliegue 
+    background: #B4B4B4
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF
+#despliegue div:nth-child(n)
+    background: #CCCCCC
+.gif-tendencias:hover>div
+    background: $background-duo
+    display: block
+.crear-cuadroGrande>button:nth-child(2n)
+    background: #CE36DB
+.crear-cuadroGrande div button:nth-child(n)
+    background: #EE3EFE
+    border: 1px solid #110038
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+#subir .crear-cuadroGrande button img
+    content: url("/../assets/camera.svg")
+.crear-cuadroGrande div button:nth-child(1)
+    background-image: url("/../assets/camera_light.svg")
+    background-position: center
+    background-repeat: no-repeat
+#subir2, #repetir
+    background: #110038
+    border: 1px solid #B4B4B4
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD
+    color: #ffffff
+div.progress-bar-dos
+
+div.progress-bar-dos>div:nth-child(n)
+    background: $rosa-oscuro
+#cancelar, #repetir
+    background-color: $violeta-oscuro
+video, #preview
+    background: #B4B4B4
+    border: 1px solid #979797
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000
+#copiar,#descargar
+    background: $violeta-oscuro
+#listo
+    background: $rosa-oscuro
+.busqueda button
+    background: #B4B4B4
+    color: #8F8F8F
+div.busqueda>button.typing
+    background: #EE3EFE
+    border: 1px solid #110038
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF
+.ejemplos>div:nth-child(n)
+    background-color: #2E32FB
+    border: 1px solid #4C2F99
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF
+#contenedor
+    background: #B4B4B4
+#flecha
+    background-color: #CE36DB
+#copiar, #descargar, #listo,#cancelar,#comenzar,#comenzar2
+    color: #ffffff
+
+
+#comenzar2, #comenzar
+    border: 1px solid #B4B4B4
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD
+  
+#comenzar2
+    background: #110038
+
+#repetir
+    outline-offset: -3px
+    outline: 1px dotted #ffffff
